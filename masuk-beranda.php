@@ -9,9 +9,11 @@ $row = $result->fetch_assoc();
 $x = $row['sandi'];
 $y = $row['kategoriID'];
 if (strcasecmp($x, $p) == 0 && !empty($u) && !empty($p)) {
-    //echo "<script type='text/javascript'>console.('Gagal untuk masuk')</script>";
     $_SESSION['penggunaID'] = $u;
     header('location:beranda.php');
 } else {
     echo "<script type='text/javascript'>alert('Gagal untuk masuk')</script>";
+    echo("<script>window.location = 'index.php';</script>");
 }
+
+// strcasecmp untuk membiarkan password huruf kapital atau tidak (case sensitive)
