@@ -31,4 +31,8 @@ require 'components/header.php';
 				</div></center>'
 
     ?>
+	<p>
+	<input type="submit" value="Beranda" onclick="location.href='beranda.php';">
+	<input type="submit" value="Tiket Saya" onclick="location.href='lihattiket.php';">
+	<input type="submit" value="Batalkan Tiket" onclick="location.href='batalkantiket.php';">
 </body>

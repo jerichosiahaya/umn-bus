@@ -120,4 +120,6 @@ require 'components/header.php';
 			}
 			?>
 		</div>
+		<p>
+		<input type="submit" value="Beranda" onclick="location.href='beranda.php';">
 </body>
