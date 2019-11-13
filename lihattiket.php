@@ -47,4 +47,7 @@
               </tbody>
           </table>
       </div>
+      <p>
+      <input type="submit" value="Beranda" onclick="location.href='beranda.php';">
+      <input type="submit" value="Batalkan Tiket" onclick="location.href='batalkantiket.php';">
   </body>
