@@ -61,11 +61,7 @@ require 'components/header.php';
       <?php
         require 'db-init.php';
         $userID = $_SESSION['penggunaID'];
-        $sql = "SELECT kategoriID FROM pengguna WHERE penggunaID='$userID';";
-        $result = $koneksi->query($sql);
-        $row = $result->fetch_assoc();
-        $userType = $row['kategoriID'];
-        $sql1 = "SELECT * FROM tiket JOIN rute ON tiket.ruteID = rute.ruteID WHERE penggunaID = '$userID' ORDER BY tglBerangkat DESC;";
+        $sql1 = "SELECT * FROM tiket JOIN rute ON tiket.ruteID = rute.ruteID WHERE penggunaID=" . $userID . " AND busID=" . $bid . " AND noKursi=" . $seat . ";";
         $result1 = $koneksi->query($sql1);
         while ($row = $result1->fetch_assoc()) {
             echo '<a href="batal-tiket-satu.php?bis=' . $row["busID"] . '&seat=' . $row["noKursi"] . '" class="btn btn-danger" role="button">Batalkan Tiket</a>';}
