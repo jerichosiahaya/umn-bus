@@ -100,7 +100,7 @@ die();
   <div class="container">
     <div class="row">
     <div class="col-sm col-md-2 col-lg-3 mt-3 text-center">
-    <a href="">
+    <a href="profil.php">
     <img src="images/profile.png" class="img-fluid" alt="Responsive image">
     </a>
     <p><h4>Profil</h4>
