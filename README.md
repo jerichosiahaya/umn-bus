@@ -12,8 +12,8 @@
 ## Instalasi
 - Download semua file
 - Taruh di htdocs XAMPP
-- Buat database dengan nama "u-bus" di MySQL Server
-- Import SQL File dari folder database (gunakan yang u-bus)
+- Buat database dengan nama "umn-bus-baru" di MySQL Server
+- Import SQL File dari folder database (gunakan yang umn-bus-baru)
 
 ## Author
 - [Jericho Siahaya]( https://github.com/jerichosiahaya )
