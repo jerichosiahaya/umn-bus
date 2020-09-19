@@ -1,4 +1,5 @@
 title: U-Bus | Jericho Siahaya
+title-heading: false
 plugins:
   - jekyll-relative-links
 relative_links:
