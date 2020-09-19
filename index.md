@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# U-Bus
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-You can use the [editor on GitHub](https://github.com/jerichosiahaya/umn-bus/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![Universitas Multimedia Nusantara](https://cdns.klimg.com/merdeka.com/i/w/news/2019/09/19/1110741/670x335/umn-tawarkan-beasiswa-sejumlah-program-studi-khusus-minat.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Fitur
+- Login (sesuai NIM/ID)
+- Memesan tiket
+- Melihat tiket
+- Membatalkan tiket
 
-### Markdown
+## Instalasi
+- Download semua file
+- Taruh di htdocs XAMPP
+- Buat database dengan nama "umn-bus-baru" di MySQL Server
+- Import SQL File dari folder database (gunakan yang umn-bus-baru)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Author
+- [Jericho Siahaya]( https://github.com/jerichosiahaya )
+- [Ricky Ng]( https://github.com/rickyreplying )
+- [Darren Riota]( https://github.com/VDarrenRiota )
+- [Chezar Ramadhan]( https://github.com/Chezar17 ) (membuat logo)
 
-```markdown
-Syntax highlighted code block
+## Documentation
+- Login Page
+![Login](images/documentation/login.png)
+- Beranda
+![Beranda](images/documentation/beranda.png)
+- Pesan Tiket
+![Pesan Tiket](images/documentation/pesantiket.png)
+- Digital Ticket
+![Digital Ticket](images/documentation/lihattiket.png)
+- Lihat Tiket
+![Tiket](images/documentation/lihatdaftartiket.png)
+- Batalkan Tiket
+![Batalkan Tiket](images/documentation/batalkantiket.png)
+- Jadwal Bus
+![Jadwal Bus](images/documentation/jadwaltiket.png)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jerichosiahaya/umn-bus/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### <i>Major Update<i>
+<i>Ganti nama database di koneksi.php, db-init.php dan db-ts.php (di dalam folder components) dengan nama database yang ingin dipakai. Gunakan database terbaru "umn-bus-baru" yang terdapat di dalam folder database. <bold> Jika muncul error saat pertama kali login, langsung direfresh, error itu karena timeout XAMPP yang diset 30 detik, sedangkan database ini butuh lebih dari 30 detik saat pertama kali login.</bold><i><br>Gunakan NIM dan Sandi yang ada pada tabel 'pengguna', atau gunakan NIM: 32932 dan Sandi: richo1901.
